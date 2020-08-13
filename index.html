@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Notes</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+</head>
+<body>
+  <main id="app" class="container py-5">
+    <router-view />
+  </main>
+
+  <!-- Libraries -->
+  <script src="https://www.gstatic.com/firebasejs/7.16.0/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.16.0/firebase-firestore.js"></script>
+  <script src="https://unpkg.com/vue/dist/vue.js"></script>
+  <script src="https://unpkg.com/vue-router/dist/vue-router.js"></script>
+
+  <!-- Pages and Components -->
+  <script src="pages/contacts.vue.js"></script>
+  <script src="pages/contact.vue.js"></script>
+  <script src="pages/new.vue.js"></script>
+  <script src="pages/edit.vue.js"></script>
+
+  <script src="db.js"></script>
+  <script src="routes.js"></script>
+  <script src="app.js"></script>
+
+  <!-- <script>
+    db.collection('contacts').get()
+      .then(data => data.forEach(doc => console.log(doc.data())))
+  </script> -->
+</body>
+</html>
